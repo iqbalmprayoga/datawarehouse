@@ -29,20 +29,22 @@ Integrasi dengan Hadoop Ecosystem, Hive terintegrasi dengan baik dengan komponen
 
 # B. Dokumentasi praktik instalasi software dan perintah CRUD
 1. Download software apache hadoop => [Download Hadoop](https://hadoop.apache.org/release/2.7.0.html)
-2. Download software apache derby => [Download Derby] (https://db.apache.org/derby/releases/release-10_14_2_0.html)
-3. Download software apache hive => [Download Hive] https://dlcdn.apache.org/hive/
+2. Download software apache derby => [Download Derby](https://db.apache.org/derby/releases/release-10_14_2_0.html)
+3. Download software apache hive => [Download Hive](https://dlcdn.apache.org/hive/)
 4. Extract file zip ketiga software tersebut dan pindahkan ke directory C:\
 5. Tambahkan di **Environment Variables…** untuk variable **DERBY_HOME, HADOOP_USER_CLASSPATH, HIVE_BIN, HIVE_HOME dan HIVE_LIB**
 6. Tambahkan di **System variables** untuk variable **HADOOP_USER_CLASSPATH** dan tambahkan di variable **PATH (C:\hadoop\bin, C:\hadoop\sbin, C:\hive\bin, C:\derby\bin)**
 7. Pada folder C:\hive\conf file dengan nama **hive-default.xml.template** diubah menjadi **hive-site.xml**
 8. Masuk ke folder C:\hadoop\etc\hadoop, buka file hadoop-env.cmd, kemudian set JAVA_HOME=%JAVA_HOME% diubah menjadi set JAVA_HOME=C:\Java\jdk1.8.0_202
 9. Masuk ke folder C:\hadoop\etc\hadoop, buka file core-site.xml, tambahkan configuration berikut:
-*<configuration>*
-*<property>*
-*<name>fs.defaultFS</name>*
-*<value>hdfs://localhost:9000</value>*
-*</property>*
-*</configuration>*
+```java
+<configuration>
+<property>
+<name>fs.defaultFS</name>
+<value>hdfs://localhost:9000</value>
+</property>
+</configuration>
+```
 10. Masuk ke folder C:\hadoop\etc\hadoop, buka file mapred-site.xml, tambahkan configuration berikut:
 *<configuration>*
 *<property>*
