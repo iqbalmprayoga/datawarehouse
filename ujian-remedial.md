@@ -46,39 +46,45 @@ Integrasi dengan Hadoop Ecosystem, Hive terintegrasi dengan baik dengan komponen
 </configuration>
 ```
 10. Masuk ke folder C:\hadoop\etc\hadoop, buka file mapred-site.xml, tambahkan configuration berikut:
-*<configuration>*
-*<property>*
-*<name>mapreduce.framework.name</name>*
-*<value>yarn</value>*
-*</property>*
-*</configuration>*
+```java
+<configuration>
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+</configuration>
+```
 11. Buat folder *data* yang berisi folder *namenode* dan *datanode* pada folder C:\hadoop
 12. Masuk ke folder C:\hadoop\etc\hadoop, buka file httpfs-site.xml, tambahkan configuration berikut:
-*<configuration>*
-*<property>*
-*<name>dfs.replication</name>*
-*<value>1</value>*
-*</property>*
-*<property>*
-*<name>dfs.namenode.name.dir</name>*
-*<value>C:\hadoop\data\namenode</value>*
-*</property>*
-*<property>*
-*<name>dfs.datanode.data.dir</name>*
-*<value>C:\hadoop\data\datanode</value>*
-*</property>*
-*</configuration>*
+```java
+<configuration>
+<property>
+<name>dfs.replication</name>
+<value>1</value>
+</property>
+<property>
+<name>dfs.namenode.name.dir</name>
+<value>C:\hadoop\data\namenode</value>
+</property>
+<property>
+<name>dfs.datanode.data.dir</name>
+<value>C:\hadoop\data\datanode</value>
+</property>
+</configuration>
+```
 13. Masuk ke folder C:\hadoop\etc\hadoop, buka file yarn-site.xml, tambahkan configuration berikut:
-*<configuration>*
-*<property>*
-*<name>yarn.nodemanager.aux-service</name>*
-*<value>mapreduce_shuffle</value>*
-*</property>*
-*<property>*
-*<name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>*
-*<value>org.apache.hadoop.mapred.ShuffleHandler</value>*
-*</property>*
-*</configuration>*
+```java
+<configuration>
+<property>
+<name>yarn.nodemanager.aux-service</name>
+<value>mapreduce_shuffle</value>
+</property>
+<property>
+<name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>
+<value>org.apache.hadoop.mapred.ShuffleHandler</value>
+</property>
+</configuration>
+```
 14. Buka command promt run as Administrator
 15. Ketikan *start-dfs.cmd*, untuk mengaktifkan service Hadoop dfs
 16. Ketikan *start-yarn.cmd*, untuk mengaktifkan service Hadoop yarn
