@@ -1,5 +1,4 @@
-# Heading 1
-1. Overview Software
+2.	Overview Software
 a.	Apache Hadoop
 Apache Hadoop adalah sebuah kerangka kerja perangkat lunak open-source yang memungkinkan pemrosesan data skala besar dalam lingkungan yang terdistribusi.  Dikembangkan oleh Apache Software Foundation, Hadoop dirancang untuk menyimpan dan memproses sejumlah besar data menggunakan kluster komputer yang terdiri dari banyak node.
 
@@ -28,3 +27,23 @@ Apache Hive merupakan alat yang kuat untuk analisis data skala besar di lingkung
 Hive sering digunakan untuk pengolahan data warehousing di atas Hadoop, memungkinkan analisis data besar dengan SQL dan Hive digunakan untuk menjalankan proses ETL pada data dalam Hadoop, di mana data diolah dan dipersiapkan untuk analisis lebih lanjut serta Hive dapat diintegrasikan dengan alat business intelligence (BI) seperti Tableau atau Microsoft Power BI untuk visualisasi data.
 
 
+
+3.	Dokumentasi praktik instalasi software dan perintah CRUD
+a.	Download software apache hadoop => https://hadoop.apache.org/release/2.7.0.html
+b.	Download software apache derby => https://db.apache.org/derby/releases/release-10_14_2_0.html
+c.	Download software apache hive => https://dlcdn.apache.org/hive/
+d.	Extract file zip ketiga software tersebut dan pindahkan ke directory C:\
+ 
+
+e.	Tambahkan di Environment Variables…. untuk variable DERBY_HOME, HADOOP_USER_CLASSPATH, HIVE_BIN, HIVE_HOME dan HIVE_LIB
+ 
+
+f.	Tambahkan di System variables untuk variable HADOOP_USER_CLASSPATH dan tambahkan di variable PATH (C:\hadoop\bin, C:\hadoop\sbin, C:\hive\bin, C:\derby\bin)
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
