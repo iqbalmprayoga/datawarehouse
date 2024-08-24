@@ -1,5 +1,5 @@
 # A. Overview Software
-1. Apache Hadoop
+1. Apache Hadoop <br>
 Apache Hadoop adalah sebuah kerangka kerja perangkat lunak open-source yang memungkinkan pemrosesan data skala besar dalam lingkungan yang terdistribusi.  Dikembangkan oleh Apache Software Foundation, Hadoop dirancang untuk menyimpan dan memproses sejumlah besar data menggunakan kluster komputer yang terdiri dari banyak node.
 
 Apache Hadoop digunakan dalam berbagai skenario yang membutuhkan pemrosesan data besar (big data), seperti analitik data, pembelajaran mesin, dan penyimpanan data untuk bisnis. Organisasi seperti perusahaan teknologi, layanan keuangan, dan sektor kesehatan menggunakan Hadoop untuk menganalisis sejumlah besar data dalam waktu yang relatif singkat, yang memungkinkan pengambilan keputusan yang lebih baik dan lebih cepat.
